@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+$primary: #06436e  !default;
+$white: #fff  !default;
+
+/*-- scss:rules --*/
+// This works and changes the tag appearance on the listing page
+div.quarto-post .listing-categories .listing-category {
+  background-color: $primary;
+  color: $white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  border-radius: 0.25cm;
+}
+
+// This does not work: The output contains a opacity less than 1.
+.quarto-title .quarto-categories .quarto-category {
+  opacity: 1;
+  color: $white;
+  background-color: $primary;
+}
